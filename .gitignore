@@ -72,4 +72,4 @@ proj/*
 !proj/release.py
 
 # keep the empty folders
-!/**/.keep
+!**/.keep
