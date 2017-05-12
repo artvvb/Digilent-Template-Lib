@@ -40,8 +40,12 @@ sdk/*_bsp*/*
 repo/**
 # whitelist vivado-library if it exists
 !repo/vivado-library
+#repo/vivado-library/**
+!repo/local
 !repo/local/**
-#repo/cache/**
+!repo/cache
+repo/cache/**
+
 # Make sure we keep only xci files in repo ip src subfolder
 #repo/*/ip/*/src/*/*
 # Ignore 'generated_ip' directory inside repo/ip
@@ -51,7 +55,7 @@ repo/**
 #!repo/*/ip/*/src/*/*.patch
 #!repo/*/ip/*/src/*/*.tcl
 # Do not ignore cached IP blocks (under test for potential runtime performance gains)
-#!repo/cache
+
 
 # Make sure we keep only xci files in ip src subfolder
 src/ip/*/**
